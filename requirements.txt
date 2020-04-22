@@ -1,2 +1,8 @@
+graphene
+sqlalchemy
+graphene_sqlalchemy
+flask_sqlalchemy
 flask
+flask_graphql
 psycopg2
+

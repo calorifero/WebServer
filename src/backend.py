@@ -8,7 +8,7 @@ def insert_data(value):
     except ConnectionError:
         return print("Unable to connect to database")
     cur = conn.cursor()
-    cur.execute('INSERT INTO temperature (temp) VALUES(%s)', (float(value), ))
+    cur.execute('INSERT INTO temperature (temperature, esp) VALUES(%s, %s)', (float(value), ))
     conn.commit()
     cur.close()
     conn.close()
